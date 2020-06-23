@@ -122,7 +122,14 @@ header h1 {
 .bride-groom .ampersand {
     font-size: 60px;
     color: #000;
-    font-family: wedding
+    font-family: wedding;
+}
+
+@media only screen and (max-width:768px) {
+    .bride-groom .ampersand {
+        display: block;
+        text-align: center;
+    }
 }
 
 .bride-groom .bride, .bride-groom .groom {
