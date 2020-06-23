@@ -101,7 +101,7 @@ header h1 {
 }
 
 .intro .heading {
-    font-size: 48px;
+    font-size: 72px;
     padding: 20px;
     text-align: center;
     font-family: wedding
@@ -120,9 +120,9 @@ header h1 {
 }
 
 .bride-groom .ampersand {
-    font-size: 36px;
-    color: #00395d;
-    display: none
+    font-size: 60px;
+    color: #000;
+    font-family: wedding
 }
 
 .bride-groom .bride, .bride-groom .groom {
@@ -202,7 +202,26 @@ header h1 {
     border-radius: 50%;
     background-color: #5e105b;
     width: 200px;
-    height: 200px
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team-bride .gang .gang-image.shrinwanti {
+    background-image: url(assets/wanti.jpg);
+}
+
+.team-bride .gang .gang-image.shalini {
+    background-image: url(assets/shalini.jpg);
+}
+
+.team-bride .gang .gang-image.sneha {
+    background-image: url(assets/sneha.jpg);
+}
+
+.team-bride .gang .gang-image.swayam {
+    background-image: url(assets/swayam.jpg);
 }
 
 .team-bride .gang .gang-message, .team-groom .gang .gang-message {
