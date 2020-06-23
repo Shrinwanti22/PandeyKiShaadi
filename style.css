@@ -1,0 +1,221 @@
+@font-face {
+    font-family: wedding;
+    src: url(assets/GreatVibes-Regular.woff) format("woff"), url(assets/GreatVibes-Regular.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(assets/OpenSansCondensed-Light.woff) format("woff"), url(assets/OpenSansCondensed-Light.woff2) format("woff2")
+}
+
+* {
+    box-sizing: border-box;
+    font-family: opensans;
+    margin: 0;
+    padding: 0
+}
+
+header h1 {
+    font-family: wedding;
+    position: absolute;
+    font-size: 72px;
+    z-index: 1;
+    top: 10%;
+    left: 8%;
+    color: #e5ebee
+}
+
+.banner, header h1 {
+    display: block;
+    width: 100%
+}
+
+.banner {
+    position: relative;
+    height: 700px;
+    opacity: .75;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/banner.jpg)
+}
+
+.banner .countdown {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000
+}
+
+.banner .countdown .timer {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: .95;
+    margin: 10px
+}
+
+.banner video {
+    position: absolute
+}
+
+.save-the-date {
+    display: flex;
+    min-height: 800px;
+    background-color: #5e105b
+}
+
+@media only screen and (max-width:768px) {
+    .save-the-date {
+        display: block;
+        min-height: 600px
+    }
+    .save-the-date video {
+        width: 100%
+    }
+}
+
+.save-the-date .invite {
+    flex-basis: 50%;
+    background-image: url(assets/invite.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%
+}
+
+.save-the-date .std {
+    flex-basis: 50%
+}
+
+.intro {
+    margin: auto;
+    padding: 40px 0;
+    background-color: #fff
+}
+
+.intro .heading {
+    font-size: 48px;
+    padding: 20px;
+    text-align: center;
+    font-family: wedding
+}
+
+.bride-groom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+@media only screen and (max-width:768px) {
+    .bride-groom {
+        display: block
+    }
+}
+
+.bride-groom .ampersand {
+    font-size: 36px;
+    color: #00395d;
+    display: none
+}
+
+.bride-groom .bride, .bride-groom .groom {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff
+}
+
+.bride-groom .bride .image, .bride-groom .groom .image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: inline-block;
+    background-size: cover
+}
+
+.bride-groom .bride .image {
+    background-image: url(assets/pandey.jpg)
+}
+
+.bride-groom .groom .image {
+    background-image: url(assets/jeetu.jpg)
+}
+
+.bride-groom .bride-text, .bride-groom .groom-text {
+    padding: 20px 40px
+}
+
+.parallex-bg {
+    height: 600px;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.parallex-bg.couple-banner {
+    background-image: url(assets/banner2.jpg)
+}
+
+.parallex-bg.bride-banner {
+    background-image: url(assets/banner3.jpg);
+    opacity: .85
+}
+
+.parallex-bg.groom-banner {
+    background-image: url(assets/banner4.jpg);
+    opacity: .85
+}
+
+.parallex-bg .banner-text {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 72px;
+    font-style: italic
+}
+
+.team-bride, .team-groom {
+    padding: 40px
+}
+
+.team-bride .gang, .team-groom .gang {
+    display: flex;
+    align-items: center
+}
+
+.team-bride .gang.even, .team-groom .gang.even {
+    flex-direction: row-reverse
+}
+
+.team-bride .gang .gang-image, .team-groom .gang .gang-image {
+    display: inline-block;
+    flex-basis: 200px;
+    border-radius: 50%;
+    background-color: #5e105b;
+    width: 200px;
+    height: 200px
+}
+
+.team-bride .gang .gang-message, .team-groom .gang .gang-message {
+    padding: 0 30px
+}
+
+@media only screen and (max-width:768px) {
+    .team-bride .gang, .team-groom .gang {
+        margin-bottom: 30px;
+        display: block
+    }
+    .team-bride .gang p, .team-groom .gang p {
+        text-align: center
+    }
+}
