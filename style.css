@@ -8,6 +8,11 @@
     src: url(assets/OpenSansCondensed-Light.woff) format("woff"), url(assets/OpenSansCondensed-Light.woff2) format("woff2")
 }
 
+@font-face {
+    font-family: greatVibes;
+    src: url(assets/GreatVibes-Regular.woff) format("woff"), url(assets/GreatVibes-Regular.woff2) format("woff2")
+}
+
 * {
     box-sizing: border-box;
     font-family: opensans;
@@ -22,7 +27,11 @@ header h1 {
     z-index: 1;
     top: 10%;
     left: 8%;
-    color: #e5ebee
+    color: #fff;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    animation: 1s;
+    animation-name: slideIn;
 }
 
 .banner, header h1 {
@@ -32,7 +41,7 @@ header h1 {
 .banner {
     position: relative;
     height: 700px;
-    opacity: .75;
+    opacity: 1;
     background-attachment: fixed;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -243,4 +252,58 @@ header h1 {
     .team-bride .gang p, .team-groom .gang p {
         text-align: center
     }
+}
+
+/* Animations */
+
+@-webkit-keyframes slideIn {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        visibility: visible;
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 3s;
+    animation: fadeIn 3s;
 }
