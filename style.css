@@ -85,7 +85,7 @@ header h1 {
     .save-the-date {
         display: block;
         min-height: 600px;
-        background-color: transparent;
+        background-color: #c89e77;
     }
     .save-the-date video {
         width: 100%;
