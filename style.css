@@ -34,6 +34,14 @@ header h1 {
     animation-name: slideIn;
 }
 
+@media only screen and (max-width:768px) {
+    header h1 {
+        top: 200px;
+        /* left: 50%;
+        transform: translateX(-50%); */
+    }
+}
+
 .banner, header h1 {
     display: block;
 }
@@ -46,7 +54,13 @@ header h1 {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(assets/banner.jpg)
+    background-image: url(assets/banner.jpg);
+}
+
+@media only screen and (max-width:768px) {
+    .banner {
+        background-image: url(assets/bannerMobile.jpg);
+    }
 }
 
 .banner .countdown {
@@ -165,6 +179,13 @@ header h1 {
     background-size: cover
 }
 
+@media only screen and (max-width:768px) {
+    .bride-groom .bride .image, .bride-groom .groom .image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
 .bride-groom .bride .image {
     background-image: url(assets/pandey.jpg)
 }
@@ -174,7 +195,12 @@ header h1 {
 }
 
 .bride-groom .bride-text, .bride-groom .groom-text {
-    padding: 20px 40px
+    padding: 20px 40px;
+    position: relative;
+}
+
+.bride-groom .bride-text .subtext, .bride-groom .groom-text .subtext {
+    position: absolute;
 }
 
 .parallex-bg {
@@ -189,6 +215,12 @@ header h1 {
 .parallex-bg.couple-banner {
     background-image: url(assets/banner2.jpg)
 }
+
+/* @media only screen and (max-width:768px) {
+    .parallex-bg.couple-banner {
+        background-image: url(assets/bannerMobile.jpg);
+    }
+} */
 
 .parallex-bg.bride-banner {
     background-image: url(assets/banner3.jpg);
@@ -250,8 +282,83 @@ header h1 {
     background-image: url(assets/swayam.jpg);
 }
 
+.team-groom .gang .gang-image.richa {
+    background-image: url(assets/Richa.jpg);
+}
+
+.team-groom .gang .gang-image.abhishek {
+    background-image: url(assets/abhishek.jpg);
+}
+
+.team-groom .gang .gang-image.harsh {
+    background-image: url(assets/Harsh.png);
+}
+
+.team-groom .gang .gang-image.adwaith {
+    background-image: url(assets/Advaith.jpg);
+}
+
+.team-groom .gang .gang-image.amit {
+    background-image: url(assets/Amit.jpg);
+}
+
+.team-groom .gang .gang-image.abbas {
+    background-image: url(assets/Abbas.jpg);
+}
+
+.team-groom .gang .gang-image.ankit {
+    background-image: url(assets/Ankit.jpg);
+}
+
+.team-groom .gang .gang-image.tejas {
+    background-image: url(assets/Tejas.jpg);
+}
+
+.team-groom .gang .gang-image.sumant {
+    background-image: url(assets/Sumant.jpg);
+}
+
 .team-bride .gang .gang-message, .team-groom .gang .gang-message {
     padding: 0 30px
+}
+
+.subtext {
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+    right: 30px;
+}
+
+.footer-banner {
+    height: 600px;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.75;
+    background-image: url('./assets/footerBanner.jpg');
+}
+
+.footer-message {
+    font-family: wedding;
+    font-size: 72px;
+    padding: 40px;
+    margin: 30px;
+    text-align: center;
+    font-weight: normal;
+    position: absolute;
+    color: white;
+    display: block;
+    bottom: 30px;
+    border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width:768px) {
+    .footer-message {
+        font-size: 48px;
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width:768px) {
