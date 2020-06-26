@@ -36,7 +36,7 @@ header h1 {
 
 @media only screen and (max-width:768px) {
     header h1 {
-        top: 200px;
+        top: 25px;
         /* left: 50%;
         transform: translateX(-50%); */
     }
@@ -65,9 +65,9 @@ header h1 {
 
 .banner .countdown {
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: 1000;
 }
 
@@ -76,6 +76,7 @@ header h1 {
         width: 200px;
         display: flex;
         flex-wrap: wrap;
+        bottom: 10px;
     }
 }
 
@@ -358,6 +359,12 @@ header h1 {
     .footer-message {
         font-size: 48px;
         padding: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .footer-banner {
+        height: 800px;
     }
 }
 
