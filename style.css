@@ -55,6 +55,7 @@ header h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(assets/banner.jpg);
+    box-shadow: 0 0 100px 0 #fff inset;
 }
 
 @media only screen and (max-width:768px) {
